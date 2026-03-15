@@ -1,0 +1,240 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* FULL WEBSITE BACKGROUND IMAGE */
+
+body{
+background-image: url(images/main1.jpg);
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0,0,0,0.6);
+}
+
+.nav-links{
+    list-style-type: none;
+    gap: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0,0%,10%);
+}
+
+.navbar li{
+float: left;
+}
+
+.login-btn{
+padding:8px 20px;
+border:none;
+background:orange;
+color:white;
+cursor:pointer;
+border-radius:5px;
+font-size: 16px;
+}
+
+.login-btn:hover{
+    background: darkorange;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:60px;
+}
+
+.hero-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* VIDEO */
+
+.video{
+padding:60px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+}
+
+.video video{
+width:50%;
+border-radius:10px;
+}
+
+/* BOOKING */
+
+.booking{
+padding:60px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+font-size: 20px;
+}
+
+.booking form{
+display:flex;
+flex-direction:column;
+width:600px;
+margin:auto;
+gap:15px;
+}
+
+.booking input,
+.booking select{
+width: 100%;
+padding: 12px;
+margin: 10px 0;
+border:none;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.booking button{
+width: 100%;
+padding:12px;
+margin-top: 10px;
+border: none;
+background:orange;
+border-radius: 5px;
+color:rgb(255, 255, 255);
+font-size: 16px;
+cursor:pointer;
+
+}
+
+
+.booking button:hover{
+    background-color: darkorange;
+}
+
+
+/* GALLERY */
+
+.gallery{
+padding:60px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+} 
+
+.images{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    background:white;
+    color:black;
+    border-radius:10px;
+    text-align: center;
+    overflow:hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title{
+    height: 80px; 
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold; 
+
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+/* LOGIN POPUP */
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:white;
+padding:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+width:250px;
+color:black;
+}
+
+.popup-box button{
+background:orange;
+border:none;
+padding:10px;
+color:white;
+cursor:pointer;
+}
