@@ -1,166 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-<title>ExploreWorld Travel</title>
-<link rel="stylesheet" href="style.css">
-</head>
+        <title>ExploreWorld Travel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-
-<!-- NAVBAR -->
-
-<nav class="navbar">
-
-<div class="logo">ExploreWorld</div>
-
-<ul class="nav-links">
-<li><a href="#">Home</a></li>
-<li><a href="#video">Video</a></li>
-<li><a href="#gallery">Destinations</a></li>
-<li><a href="#booking">Book Trip</a></li>
-</ul>
-
-<button class="login-btn" onclick="openLogin()">Login</button>
-
-</nav>
+    <body>
 
 
-<!-- HERO SECTION -->
+        <nav class="navbar">
 
-<section class="hero">
+            <div class="logo">ExploreWorld</div>
 
-<div class="hero-text">
-<h1>Explore The World</h1>
-<p style="font-size: 30px;">Discover amazing destinations with our travel experts</p>
-<a href="#booking" class="hero-btn">Plan Your Trip</a>
-</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#gallery">Destinations</a></li>
+                <li><a href="#booking">Book Trip</a></li>
+            </ul>
 
-</section>
+            <button class="login-btn" onclick="openLogin()">Login</button>
 
-
-<!-- VIDEO SECTION -->
-
-<section id="video" class="video">
-
-<h2>Travel With Us</h2>
-
-<video controls>
-<source src="images/istockphoto-1439621229-640_adpp_is.mp4" type="video/mp4">
-</video>
-
-</section>
+        </nav>
 
 
-<!-- BOOKING FORM -->
+        <section class="hero">
 
-<section id="booking" class="booking">
+            <div class="hero-text">
+                <h1>Explore The World</h1>
+                <p style="font-size: 30px;">Discover amazing destinations with our travel experts</p>
+                <a href="#booking" class="hero-btn">Plan Your Trip</a>
+            </div>
 
-<h2>Book Your Trip</h2>
-
-<form onsubmit="bookTrip(event)">
-
-<input type="text" placeholder="Full Name" required>
-
-<input type="email" placeholder="Email Address" required>
-
-<select required>
-<option>Select Destination</option>
-<option>Paris</option>
-<option>Maldives</option>
-<option>Dubai</option>
-<option>Switzerland</option>
-<option>Bali</option>
-</select>
-
-<input type="date" required>
-
-<button type="submit">Book Now</button>
-
-<p id="msg"></p>
-
-</form>
-
-</section>
+        </section>
 
 
-<!-- DESTINATION GALLERY -->
+        <section id="video" class="video">
 
-<section id="gallery" class="gallery">
+            <h2>Travel With Us</h2>
 
-<h2>Popular Destinations</h2>
+            <video controls>
+                <source src="images/istockphoto-1439621229-640_adpp_is.mp4" type="video/mp4">
+            </video>
 
-<div class="images">
-
-<div class="card">
-<img src="images/paris.jpg">
-<p class="card-title">Paris</p>
-</div>
-
-<div class="card">
-<img src="images/maldives.jpg">
-<p class="card-title">Maldives</p>
-</div>
-
-<div class="card">
-<img src="images/dubai.jpg">
-<p class="card-title">Dubai</p>
-</div>
-
-<div class="card">
-<img src="images/switzerland.jpg">
-<p class="card-title">Switzerland</p>
-</div>
-
-<div class="card">
-<img src="images/bali.jpg">
-<p class="card-title">Bali</p>
-</div>
-
-<div class="card">
-<img src="images/tokyo.jpg">
-<p class="card-title">Tokyo</p>
-</div>
-
-<div class="card">
-<img src="images/america.jpg">
-<p class="card-title">America</p>
-</div>
-
-<div class="card">
-<img src="images/china.jpg">
-<p class="card-title">China</p>
-</div>
-
-</div>
-
-</section>
+        </section>
 
 
-<footer>
-<p>© 2026 ExploreWorld Travel Agency</p>
-</footer>
+        <section id="booking" class="booking">
+
+            <h2>Book Your Trip</h2>
+
+            <form onsubmit="bookTrip(event)">
+
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option>Select Destination</option>
+                    <option>Paris</option>
+                    <option>Maldives</option>
+                    <option>Dubai</option>
+                    <option>Switzerland</option>
+                    <option>Bali</option>
+                </select>
+
+                <input type="date" required>
+                <button type="submit">Book Now</button>
+                <p id="msg"></p>
+
+            </form>
+
+        </section>
 
 
-<!-- LOGIN POPUP -->
 
-<div class="popup" id="loginPopup">
+        <section id="gallery" class="gallery">
 
-<div class="popup-box">
+            <h2>Popular Destinations</h2>
 
-<h3>Login</h3>
+            <div class="images">
 
-<input type="text" placeholder="Username">
-<input type="password" placeholder="Password">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/paris.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">PARIS</h3>
+                    </div>
+                </div>
 
-<button onclick="closeLogin()">Login</button>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/maldives.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">MALDIVES</h3>
+                    </div>
+                </div>
 
-</div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/dubai.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">DUBAI</h3>
+                    </div>
+                </div>
 
-</div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/switzerland.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">SWITZERLAND</h3>
+                    </div>
+                </div>
 
-<script src="script.js"></script>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/bali.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">BALI</h3>
+                    </div>
+                </div>
 
-</body>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/tokyo.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">TOKYO</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/america.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">AMERICA</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/china.jpg">
+                    </div>
+                    <div class="content">
+                        <h3 class="card-title">CHINA</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 ExploreWorld Travel Agency</p>
+        </footer>
+
+
+        <div class="popup" id="loginPopup">
+
+            <div class="popup-box">
+
+                <h3>Login</h3>
+
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+
+                <button onclick="closeLogin()">Login</button>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
 </html>
