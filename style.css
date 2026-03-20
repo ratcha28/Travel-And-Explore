@@ -251,3 +251,175 @@ footer{
     color:white;
     cursor:pointer;
 }
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .booking form {
+        width: 80%;
+    }
+
+    .video video {
+        width: 80%;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .navbar li {
+        float: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 18px !important;
+    }
+
+    .hero-btn {
+        padding: 10px 20px;
+    }
+
+    /* Video */
+    .video {
+        padding: 30px 15px;
+    }
+
+    .video video {
+        width: 100%;
+    }
+
+    /* Booking */
+    .booking {
+        padding: 30px 15px;
+    }
+
+    .booking form {
+        width: 100%;
+    }
+
+    /* Gallery */
+    .gallery {
+        padding: 30px 15px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px !important;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+
+}
+
+/* Popup background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+}
+
+#popupMessage {
+    color: #333;          /* 🔥 VERY IMPORTANT */
+    font-size: 20px;      /* make it visible */
+    margin-top: 10px;
+}
+
+.tick {
+    font-size: 50px;
+}
+
+.popup-content button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #28a745, #4CAF50);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.popup-content button:hover {
+    background: linear-gradient(135deg, #218838, #45a049);
+    transform: scale(1.05);
+}
+
+/* Click effect */
+.popup-content button:active {
+    transform: scale(0.95);
+}
+/* Animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
