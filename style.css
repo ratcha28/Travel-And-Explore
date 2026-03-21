@@ -83,7 +83,6 @@ body{
     background: darkorange;
 }
 
-/* HERO */
 
 .hero{
     height:90vh;
@@ -263,9 +262,6 @@ footer{
     cursor:pointer;
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
-
-/* Tablets */
 @media (max-width: 1024px) {
 
     .booking form {
@@ -305,10 +301,8 @@ img, video {
     max-width: 100%;
     height: auto;
 }
-/* MOBILE DEVICES */
-@media (max-width: 768px) {
 
-    /* Navbar */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -320,7 +314,6 @@ img, video {
         text-align: center;
     }
 
-    /* Hero Section */
     .hero {
         padding: 20px;
         text-align: center;
@@ -330,13 +323,11 @@ img, video {
         font-size: 24px;
     }
 
-    /* Buttons */
     button {
         width: 100%;
         padding: 12px;
     }
 
-    /* Cards / Destinations */
     .destination-container {
         flex-direction: column;
         align-items: center;
@@ -346,7 +337,6 @@ img, video {
         width: 90%;
     }
 
-    /* Forms */
     form {
         width: 90%;
     }
@@ -355,13 +345,11 @@ img, video {
         width: 100%;
     }
 
-    /* Popup */
     .popup-content {
         width: 90%;
     }
 }
 
-/* Popup background */
 .popup {
     display: none;
     position: fixed;
@@ -383,8 +371,8 @@ img, video {
 }
 
 #popupMessage {
-    color: #333;          /* 🔥 VERY IMPORTANT */
-    font-size: 20px;      /* make it visible */
+    color: #333;          
+    font-size: 20px;      
     margin-top: 10px;
 }
 
@@ -404,17 +392,15 @@ img, video {
     transition: 0.3s ease;
 }
 
-/* Hover effect */
 .popup-content button:hover {
     background: linear-gradient(135deg, #218838, #45a049);
     transform: scale(1.05);
 }
 
-/* Click effect */
 .popup-content button:active {
     transform: scale(0.95);
 }
-/* Animation */
+
 @keyframes scaleUp {
   from {
     transform: scale(0.7);
